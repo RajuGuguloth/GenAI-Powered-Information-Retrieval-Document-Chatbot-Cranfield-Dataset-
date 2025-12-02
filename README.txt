@@ -2,7 +2,7 @@
 
 This directory contains the RAG integration for your existing Information Retrieval system. The RAG system enhances your LSA-based retrieval with LLM-powered answer generation.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install Dependencies
 
@@ -18,7 +18,7 @@ python rag_server.py
 
 This will launch a Gradio web interface at `http://localhost:7860`
 
-## 📁 Files Overview
+##  Files Overview
 
 - **`rag_utils.py`** - Core utilities for document processing, dataset loading, and evaluation
 - **`rag_build_index.py`** - Index building and retrieval functionality (LSA + FAISS)
@@ -26,7 +26,7 @@ This will launch a Gradio web interface at `http://localhost:7860`
 - **`test_rag.py`** - Test script to verify system functionality
 - **`requirements_rag.txt`** - Python dependencies for RAG functionality
 
-## 🔧 Configuration Options
+##  Configuration Options
 
 ### Command Line Arguments
 
@@ -50,7 +50,7 @@ For OpenAI integration:
 export OPENAI_API_KEY="your-api-key-here"
 ```
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### 1. Document Processing
 - **Reuses your existing preprocessing pipeline**: sentence segmentation, tokenization, lemmatization, stopword removal
@@ -122,7 +122,7 @@ chain = RetrievalQA.from_chain_type(
 )
 ```
 
-## 📊 Evaluation
+##  Evaluation
 
 ### RAG-Specific Metrics
 
@@ -137,7 +137,7 @@ The system automatically evaluates:
 
 Your existing evaluation scripts remain unchanged. The RAG system adds new evaluation capabilities without disrupting the current pipeline.
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -165,7 +165,7 @@ Run the test script to verify system functionality:
 python test_rag.py
 ```
 
-## 🔄 Integration with Existing System
+##  Integration with Existing System
 
 ### Minimal Disruption
 
@@ -188,7 +188,7 @@ Main-Project/Code/
 └── requirements_rag.txt      # NEW: RAG dependencies
 ```
 
-## 🚀 Advanced Features
+##  Advanced Features
 
 ### 1. Custom Document Sources
 
@@ -232,7 +232,7 @@ def _generateOpenAIAnswer(self, query: str, context: str) -> str:
     # ... rest of the method
 ```
 
-## 📈 Performance Optimization
+##  Performance Optimization
 
 ### 1. Document Chunking
 
@@ -259,7 +259,7 @@ The system automatically caches:
 - Processed document content
 - LLM responses (if supported)
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 ### API Keys
 
@@ -280,7 +280,7 @@ The system automatically caches:
 - [HuggingFace Transformers](https://huggingface.co/docs/transformers)
 - [FAISS Documentation](https://github.com/facebookresearch/faiss)
 
-## 🤝 Support
+##  Support
 
 For issues or questions:
 
@@ -289,7 +289,7 @@ For issues or questions:
 3. Verify your existing system works independently
 4. Check dependency versions match requirements
 
-## 🎯 Next Steps
+##  Next Steps
 
 1. **Test the system**: `python test_rag.py`
 2. **Launch the interface**: `python rag_server.py`
